@@ -23,16 +23,6 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 1rem;
-      background: #eee;
-      color: #555;
-    }
-    a {
-      color: #004080;
-    }
     input, textarea {
       width: 100%;
       padding: 8px;
@@ -45,6 +35,34 @@
       padding: 10px 20px;
       border: none;
       cursor: pointer;
+    }
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background: #eee;
+      color: #555;
+    }
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .ipv6-badge {
+      background: #004080;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -81,7 +99,10 @@
   </section>
 
   <footer>
-    &copy; 2025 Chuck Reserva. All rights reserved.
+    <div class="footer-flex">
+      <span>&copy; 2025 Chuck Reserva. All rights reserved.</span>
+      <a href="https://ipv6-test.com/validate.php" target="_blank" class="ipv6-badge">IPv6 Ready</a>
+    </div>
   </footer>
 </body>
 </html>
