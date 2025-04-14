@@ -43,23 +43,24 @@
     a:hover {
       text-decoration: underline;
     }
-    footer {
-      padding: 1rem;
-      background: #eee;
-      color: #555;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
+    .ipv6-section {
+      text-align: center;
+      margin: 2rem auto;
     }
     .ipv6-badge {
       background: #004080;
       color: white;
-      padding: 6px 12px;
+      padding: 10px 20px;
       border-radius: 5px;
-      font-size: 0.85rem;
-      margin-top: 10px;
+      font-size: 1rem;
+      display: inline-block;
+    }
+    footer {
+      padding: 1rem;
+      background: #eee;
+      color: #555;
+      text-align: center;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -95,9 +96,12 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/chuckreserva" target="_blank">linkedin.com/in/chuckreserva</a></p>
   </section>
 
-  <footer>
-    <div>&copy; 2025 Chuck Reserva. All Rights Reserved.</div>
+  <div class="ipv6-section">
     <a href="https://ipv6-test.com/validate.php" target="_blank" class="ipv6-badge">IPv6 Ready</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Chuck Reserva. All Rights Reserved.
   </footer>
 </body>
 </html>
